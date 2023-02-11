@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/topbits :: headSection(pageTitle='Taking Courses')">
+</head>
+<body>
+    <div th:insert="fragments/topbits :: top"></div>
+    <h3>Step One: Take a Course</h3>
+    <p>What better way is there to learn the right skills and techniques other than straight from the experts? Even if you are a more experienced baker, culinary training can help to improve your craft and expand your baking repertoire.</p>
+    <p>Our Diplôme de Boulangerie has been specifically designed to prepare you for working in a professional bakery. You will learn how to make basic and advanced bread doughs, viennoiseries, and a plethora of other baked goods under the guidance of our Master Baker Dominque Moudart who has spent more than 30 years perfecting his boulangerie skills.</p>
+    <p>Our baking course can also be combined with our Diplôme de Pâtisserie for all-round training in both areas of expertise.</p>
+    <img id="home" th:src="@{/img/courses.jpg}">
+    <div th:replace="fragments/bottombits :: bottom"></div>
+</body>
+</html>

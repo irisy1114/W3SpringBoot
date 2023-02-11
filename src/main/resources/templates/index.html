@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/topbits :: headSection(pageTitle='Three Steps to Become a Professional Baker')">
+</head>
+<body>
+    <div th:insert="fragments/topbits :: top"></div>
+    <div>
+        <div>
+            <p>Traditionally a baker works in a bakery and caters to their local market but nowadays they can also work in specialty shops, supermarkets, restaurants and hotels.</p>
+            <p>Being a baker requires a lot of hard work and long hours but it is equally as rewarding, so if this is the career path that you truly want to follow, then our Teaching Chefs at Le Cordon Bleu London are providing you with these three essential steps to making your dream a reality.</p>
+        </div>
+        <img id="home" th:src="@{/img/baking.jpg}">
+    </div>
+    <div th:replace="fragments/bottombits :: bottom"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/topbits :: headSection(pageTitle='Practice')">
+</head>
+<body>
+    <div th:insert="fragments/topbits :: top"></div>
+    <h3>Step Three: Practice and be creative</h3>
+    <p>If you want to be successful you have to continue to practice so that you become a master of your craft. Even our Chefs know that there is always room for improvement, and there is always new things to be learned. As a baker you need to have perfect attention to detail in order to produce goods that are neither under or overbaked, and decorated and presented in an appetizing manner. But in order to really stand out from the crowd you have to be creative and not be afraid to experiment. Create new recipes, experiment with different flavours and textures, and just have fun with it!</p>
+    <img th:src="@{/img/practice.jpg}">
+    <div th:replace="fragments/bottombits :: bottom"></div>
+
+</body>
+</html>

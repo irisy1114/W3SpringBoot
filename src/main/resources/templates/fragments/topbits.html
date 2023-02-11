@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:fragment="headSection(pageTitle)">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <title th:text="${pageTitle}">Title</title>
+</head>
+<body>
+
+<header th:fragment="top">
+    <div class="container">
+        <div class="image">
+            <a th:href="@{/home}">
+                <img id="logo" th:src="@{/img/logo.webp}">
+            </a>
+        </div>
+        <div class="text">
+            <h2>Three Steps to Become a Professional Baker</h2>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a th:href="@{/home}">Home</a></li>
+            <li><a th:href="@{/courses}">Take Courses</a></li>
+            <li><a th:href="@{/experience}">Get Experience</a></li>
+            <li><a th:href="@{/practice}">Practice</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
